@@ -4,13 +4,13 @@
   "type": "module",
   "scripts": {
     "astro": "astro",
-    "build": "conc npm:check:* && astro build",
+    "build": "conc bun:check:* && astro build",
     "check:astro": "astro check",
     "check:style": "prettier --check .",
     "dev": "astro dev",
     "format": "prettier --write .",
-    "preview": "astro build && wrangler dev",
-    "deploy": "astro build && wrangler deploy",
+    "preview": "conc bun:build && wrangler dev",
+    "deploy": "conc bun:build && wrangler deploy",
     "cf-typegen": "wrangler types"
   },
   "dependencies": {

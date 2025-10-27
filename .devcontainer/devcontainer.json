@@ -14,5 +14,6 @@
     "vscode": {
       "extensions": ["astro-build.astro-vscode"]
     }
-  }
+  },
+  "postCreateCommand": "sudo ln -s $(which bun) /usr/local/bin/node"
 }
