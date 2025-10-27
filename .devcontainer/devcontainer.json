@@ -12,7 +12,7 @@
   },
   "customizations": {
     "vscode": {
-      "extensions": ["astro-build.astro-vscode"]
+      "extensions": ["astro-build.astro-vscode", "GitHub.vscode-github-actions"]
     }
   },
   "postCreateCommand": "sudo ln -s $(which bun) /usr/local/bin/node"
